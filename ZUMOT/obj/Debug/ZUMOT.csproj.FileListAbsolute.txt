@@ -30,3 +30,4 @@ C:\Users\Moy Portillo\Source\Repos\ZUMOT\ZUMOT\obj\Debug\WindowsFormsApp1.RECUPE
 C:\Users\Moy Portillo\Source\Repos\ZUMOT\ZUMOT\obj\Debug\pantallas.ReporteF.resources
 C:\Users\Moy Portillo\Source\Repos\ZUMOT\ZUMOT\obj\Debug\administracion1.solicitudes.resources
 C:\Users\Moy Portillo\Source\Repos\ZUMOT\ZUMOT\obj\Debug\PANTALLASVENDEDORES.Todoslosclientes.resources
+C:\Users\Moy Portillo\Source\Repos\ZUMOT\ZUMOT\obj\Debug\ZUMOT.Cambio_contra.resources

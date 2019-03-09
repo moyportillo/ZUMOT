@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Forms;
 
+
 namespace administracion1
 {
     
@@ -70,14 +71,93 @@ namespace administracion1
             return;
         }
 
-        public void buscarProyecto(string id)
+     
+
+        public int VerificarPreguntas(string pre, string user)
         {
+
+            SqlCommand cmd;
+            
+
             conectar = conexion.enlace();
-            SqlDataAdapter mostrar = new SqlDataAdapter(string.Format("select identidad_cliente, nombre_cliente + apellido_cliente from proyecto identidad_cliente like '%" + id + "%'"), conectar);
-            DataSet ds = new DataSet();
-            mostrar.Fill(ds, "proyecto");
+            SqlConnection cn = conexion.enlace();
+            int contador = 0;
+            try
+            {
+                cmd = new SqlCommand("select * from empleado_respuestas a inner join empleados b on a.id_empleado = b.id_empleado where b.usuario_empleado = @user and a.Respuesta_Pregunta1 = @pre", conectar);
+                cmd.Parameters.AddWithValue("user", user);
+                cmd.Parameters.AddWithValue("pre", pre);
+                SqlDataAdapter dtadap = new SqlDataAdapter(cmd);
+                DataTable datatabla = new DataTable();
+                dtadap.Fill(datatabla);
+
+                contador = datatabla.Rows.Count;
+ 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar bien la pregunta: " + ex.ToString());
+            }
+            finally
+            {
+                conectar.Close();
+            }
+            return contador;
 
         }
-    
+
+        //-----------------------------Verificar Preguntas----------------------------------
+
+        public int VerificarPreguntas2(string pre, string user)
+        {
+
+            SqlCommand cmd;
+                       
+
+            conectar = conexion.enlace();
+            SqlConnection cn = conexion.enlace();
+            int contador = 0;
+            try
+            {
+                cmd = new SqlCommand("select a.Respuesta_Pregunta2 from empleado_respuestas a inner join empleados b on a.id_empleado = b.id_empleado where b.usuario_empleado = @user and a.Respuesta_Pregunta2 = @pre", conectar);
+                cmd.Parameters.AddWithValue("user", user);
+                cmd.Parameters.AddWithValue("pre", pre);
+                SqlDataAdapter dtadap = new SqlDataAdapter(cmd);
+                DataTable datatabla = new DataTable();
+                dtadap.Fill(datatabla);
+
+                contador = datatabla.Rows.Count;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo consultar bien la pregunta: " + ex.ToString());
+            }
+            finally
+            {
+                conectar.Close();
+            }
+            return contador;
+        }
+
+        //----------------------------------------------------------CAMBIAR CONTRASEñA---------------------------------------------------------
+
+        public int ActualizarContraseña(string Contraseña, string user)
+        {
+            int y = 0;
+            SqlCommand cmd;
+            conectar = conexion.enlace();
+            SqlConnection cn = conexion.enlace();
+            {
+                cmd = new SqlCommand(string.Format("Update empleados set contraseña_empleado = '" + Contraseña + "' where usuario_empleado = " + user + "   ", Contraseña, user), cn);
+                y = cmd.ExecuteNonQuery();
+                cn.Close();
+
+            }
+
+            return y;
+
+        }
+
     }
 }

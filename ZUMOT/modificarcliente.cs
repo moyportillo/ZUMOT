@@ -26,5 +26,14 @@ namespace pantallas_de_clientes
         {
             MessageBox.Show("Cambios Guardados!", "MENSAJE");
         }
+
+        private void modificarcliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+            
+        
+          
     }
 }
