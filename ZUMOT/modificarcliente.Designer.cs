@@ -65,7 +65,7 @@
             // btnatrasmodi
             // 
             this.btnatrasmodi.Location = new System.Drawing.Point(471, 231);
-            this.btnatrasmodi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnatrasmodi.Margin = new System.Windows.Forms.Padding(2);
             this.btnatrasmodi.Name = "btnatrasmodi";
             this.btnatrasmodi.Size = new System.Drawing.Size(104, 41);
             this.btnatrasmodi.TabIndex = 66;
@@ -86,7 +86,7 @@
             // textBox14
             // 
             this.textBox14.Location = new System.Drawing.Point(418, 115);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(167, 20);
             this.textBox14.TabIndex = 61;
@@ -104,7 +104,7 @@
             // textBox13
             // 
             this.textBox13.Location = new System.Drawing.Point(418, 91);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(167, 20);
             this.textBox13.TabIndex = 59;
@@ -122,7 +122,7 @@
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(418, 68);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(167, 20);
             this.textBox12.TabIndex = 57;
@@ -140,7 +140,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(418, 44);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(167, 20);
             this.textBox11.TabIndex = 55;
@@ -158,7 +158,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(418, 22);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(167, 20);
             this.textBox10.TabIndex = 53;
@@ -176,7 +176,7 @@
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(124, 206);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(167, 20);
             this.textBox9.TabIndex = 51;
@@ -194,7 +194,7 @@
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(124, 183);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(167, 20);
             this.textBox8.TabIndex = 49;
@@ -212,7 +212,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(124, 160);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(167, 20);
             this.textBox7.TabIndex = 47;
@@ -230,7 +230,7 @@
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(124, 137);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(167, 20);
             this.textBox6.TabIndex = 45;
@@ -248,7 +248,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(124, 115);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(167, 20);
             this.textBox5.TabIndex = 43;
@@ -266,7 +266,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(124, 91);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(167, 20);
             this.textBox4.TabIndex = 41;
@@ -284,7 +284,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(124, 68);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(167, 20);
             this.textBox3.TabIndex = 39;
@@ -302,7 +302,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(124, 46);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(167, 20);
             this.textBox2.TabIndex = 37;
@@ -320,7 +320,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(124, 22);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(167, 20);
             this.textBox1.TabIndex = 35;
@@ -343,7 +343,7 @@
             "credito",
             "monto"});
             this.comboBox1.Location = new System.Drawing.Point(418, 137);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(167, 21);
             this.comboBox1.TabIndex = 68;
@@ -351,7 +351,7 @@
             // btnguardarmodi
             // 
             this.btnguardarmodi.Location = new System.Drawing.Point(471, 183);
-            this.btnguardarmodi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnguardarmodi.Margin = new System.Windows.Forms.Padding(2);
             this.btnguardarmodi.Name = "btnguardarmodi";
             this.btnguardarmodi.Size = new System.Drawing.Size(104, 41);
             this.btnguardarmodi.TabIndex = 69;
@@ -396,10 +396,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "modificarcliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar Informacion del Cliente";
+            this.Load += new System.EventHandler(this.modificarcliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

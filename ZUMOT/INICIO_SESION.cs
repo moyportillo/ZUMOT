@@ -58,7 +58,6 @@ namespace WindowsFormsApp1
                         else if(datatabla.Rows[0][1].ToString() == "4")
                     {
                         
-                        
                     }
                         else if (datatabla.Rows[0][1].ToString() == "5")
                     {
@@ -68,12 +67,13 @@ namespace WindowsFormsApp1
                     {
                         Iniciodevendedores viewVendedor = new Iniciodevendedores();
                         viewVendedor.Show();
+
                     }
-                    
+
                 }
                 else
                 {
-                    MessageBox.Show("El Usuario y/o Contraseña son Incorreptos. Por Favor Verificar el ingreso de los Datos!");
+                    MessageBox.Show("El Usuario y/o Contraseña son Incorrectos. Por Favor Verificar el ingreso de los Datos!");
                     txtusuario.Clear();
                     txtcontrasena.Clear();
                 }
