@@ -249,6 +249,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="proyecto.resx">
       <DependentUpon>proyecto.cs</DependentUpon>
@@ -289,6 +290,7 @@
     <Content Include="Resources\icons8-editar-archivo-32.png" />
     <Content Include="Resources\icons8-eliminar-32 %281%29.png" />
     <Content Include="Resources\icons8-eliminar-32.png" />
+    <None Include="Resources\images1.jpg" />
     <Content Include="Resources\logo3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

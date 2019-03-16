@@ -28,146 +28,145 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(consultadeinformacioncliente));
             this.txtcodiconsucli = new System.Windows.Forms.TextBox();
             this.lblcodigoconcli = new System.Windows.Forms.Label();
-            this.lblnomconsu = new System.Windows.Forms.Label();
-            this.lblapellconsu = new System.Windows.Forms.Label();
-            this.lblestadoconsu = new System.Windows.Forms.Label();
-            this.cmbnombrecon = new System.Windows.Forms.ComboBox();
-            this.cmbapellconsu = new System.Windows.Forms.ComboBox();
-            this.cmbestadoconsu = new System.Windows.Forms.ComboBox();
             this.dtvcliconsu = new System.Windows.Forms.DataGridView();
-            this.btncliconsu = new System.Windows.Forms.Button();
             this.lbltituconsu = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnlogin = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtvcliconsu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtcodiconsucli
             // 
-            this.txtcodiconsucli.Location = new System.Drawing.Point(141, 36);
+            this.txtcodiconsucli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcodiconsucli.Location = new System.Drawing.Point(182, 344);
+            this.txtcodiconsucli.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcodiconsucli.MaxLength = 13;
             this.txtcodiconsucli.Name = "txtcodiconsucli";
-            this.txtcodiconsucli.Size = new System.Drawing.Size(114, 22);
+            this.txtcodiconsucli.Size = new System.Drawing.Size(251, 26);
             this.txtcodiconsucli.TabIndex = 0;
+            this.txtcodiconsucli.TextChanged += new System.EventHandler(this.txtcodiconsucli_TextChanged);
             // 
             // lblcodigoconcli
             // 
             this.lblcodigoconcli.AutoSize = true;
-            this.lblcodigoconcli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcodigoconcli.Location = new System.Drawing.Point(22, 37);
+            this.lblcodigoconcli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcodigoconcli.Location = new System.Drawing.Point(43, 347);
+            this.lblcodigoconcli.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblcodigoconcli.Name = "lblcodigoconcli";
-            this.lblcodigoconcli.Size = new System.Drawing.Size(113, 18);
+            this.lblcodigoconcli.Size = new System.Drawing.Size(123, 20);
             this.lblcodigoconcli.TabIndex = 1;
             this.lblcodigoconcli.Text = "Id. de cliente: ";
             this.lblcodigoconcli.Click += new System.EventHandler(this.codigoconcli_Click);
             // 
-            // lblnomconsu
-            // 
-            this.lblnomconsu.AutoSize = true;
-            this.lblnomconsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnomconsu.Location = new System.Drawing.Point(22, 90);
-            this.lblnomconsu.Name = "lblnomconsu";
-            this.lblnomconsu.Size = new System.Drawing.Size(78, 18);
-            this.lblnomconsu.TabIndex = 2;
-            this.lblnomconsu.Text = "Nombre: ";
-            // 
-            // lblapellconsu
-            // 
-            this.lblapellconsu.AutoSize = true;
-            this.lblapellconsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblapellconsu.Location = new System.Drawing.Point(282, 89);
-            this.lblapellconsu.Name = "lblapellconsu";
-            this.lblapellconsu.Size = new System.Drawing.Size(72, 18);
-            this.lblapellconsu.TabIndex = 3;
-            this.lblapellconsu.Text = "Apellido:";
-            // 
-            // lblestadoconsu
-            // 
-            this.lblestadoconsu.AutoSize = true;
-            this.lblestadoconsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblestadoconsu.Location = new System.Drawing.Point(272, 38);
-            this.lblestadoconsu.Name = "lblestadoconsu";
-            this.lblestadoconsu.Size = new System.Drawing.Size(160, 18);
-            this.lblestadoconsu.TabIndex = 4;
-            this.lblestadoconsu.Text = "Estado de proyecto:";
-            // 
-            // cmbnombrecon
-            // 
-            this.cmbnombrecon.FormattingEnabled = true;
-            this.cmbnombrecon.Location = new System.Drawing.Point(106, 89);
-            this.cmbnombrecon.Name = "cmbnombrecon";
-            this.cmbnombrecon.Size = new System.Drawing.Size(153, 24);
-            this.cmbnombrecon.TabIndex = 5;
-            // 
-            // cmbapellconsu
-            // 
-            this.cmbapellconsu.FormattingEnabled = true;
-            this.cmbapellconsu.Location = new System.Drawing.Point(360, 88);
-            this.cmbapellconsu.Name = "cmbapellconsu";
-            this.cmbapellconsu.Size = new System.Drawing.Size(221, 24);
-            this.cmbapellconsu.TabIndex = 6;
-            // 
-            // cmbestadoconsu
-            // 
-            this.cmbestadoconsu.FormattingEnabled = true;
-            this.cmbestadoconsu.Items.AddRange(new object[] {
-            "En construcción",
-            "Terminado"});
-            this.cmbestadoconsu.Location = new System.Drawing.Point(438, 36);
-            this.cmbestadoconsu.Name = "cmbestadoconsu";
-            this.cmbestadoconsu.Size = new System.Drawing.Size(143, 24);
-            this.cmbestadoconsu.TabIndex = 7;
-            this.cmbestadoconsu.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
-            // 
             // dtvcliconsu
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtvcliconsu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtvcliconsu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtvcliconsu.Location = new System.Drawing.Point(25, 195);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtvcliconsu.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtvcliconsu.Location = new System.Drawing.Point(32, 466);
+            this.dtvcliconsu.Margin = new System.Windows.Forms.Padding(2);
             this.dtvcliconsu.Name = "dtvcliconsu";
+            this.dtvcliconsu.RowHeadersVisible = false;
             this.dtvcliconsu.RowTemplate.Height = 24;
-            this.dtvcliconsu.Size = new System.Drawing.Size(741, 73);
+            this.dtvcliconsu.Size = new System.Drawing.Size(556, 78);
             this.dtvcliconsu.TabIndex = 8;
-            // 
-            // btncliconsu
-            // 
-            this.btncliconsu.BackColor = System.Drawing.Color.Maroon;
-            this.btncliconsu.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btncliconsu.Location = new System.Drawing.Point(641, 63);
-            this.btncliconsu.Name = "btncliconsu";
-            this.btncliconsu.Size = new System.Drawing.Size(114, 44);
-            this.btncliconsu.TabIndex = 9;
-            this.btncliconsu.Text = "Consultar";
-            this.btncliconsu.UseVisualStyleBackColor = false;
             // 
             // lbltituconsu
             // 
             this.lbltituconsu.AutoSize = true;
             this.lbltituconsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltituconsu.ForeColor = System.Drawing.Color.Maroon;
-            this.lbltituconsu.Location = new System.Drawing.Point(31, 152);
+            this.lbltituconsu.ForeColor = System.Drawing.Color.Black;
+            this.lbltituconsu.Location = new System.Drawing.Point(134, 427);
+            this.lbltituconsu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltituconsu.Name = "lbltituconsu";
-            this.lbltituconsu.Size = new System.Drawing.Size(446, 24);
+            this.lbltituconsu.Size = new System.Drawing.Size(361, 18);
             this.lbltituconsu.TabIndex = 10;
             this.lbltituconsu.Text = "INFORMACIÓN DE CLIENTE SELECCIONADO";
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(477, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 58);
+            this.button1.TabIndex = 24;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(199, 280);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(205, 31);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Buscar Cliente";
+            // 
+            // btnlogin
+            // 
+            this.btnlogin.Image = ((System.Drawing.Image)(resources.GetObject("btnlogin.Image")));
+            this.btnlogin.Location = new System.Drawing.Point(11, 11);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(75, 59);
+            this.btnlogin.TabIndex = 26;
+            this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ZUMOT.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(194, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(230, 228);
+            this.pictureBox1.TabIndex = 27;
+            this.pictureBox1.TabStop = false;
+            // 
             // consultadeinformacioncliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(814, 329);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(610, 573);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnlogin);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbltituconsu);
-            this.Controls.Add(this.btncliconsu);
             this.Controls.Add(this.dtvcliconsu);
-            this.Controls.Add(this.cmbestadoconsu);
-            this.Controls.Add(this.cmbapellconsu);
-            this.Controls.Add(this.cmbnombrecon);
-            this.Controls.Add(this.lblestadoconsu);
-            this.Controls.Add(this.lblapellconsu);
-            this.Controls.Add(this.lblnomconsu);
             this.Controls.Add(this.lblcodigoconcli);
             this.Controls.Add(this.txtcodiconsucli);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "consultadeinformacioncliente";
             this.Text = "Consulta por cliente";
+            this.Load += new System.EventHandler(this.consultadeinformacioncliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtvcliconsu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,14 +176,11 @@
 
         private System.Windows.Forms.TextBox txtcodiconsucli;
         private System.Windows.Forms.Label lblcodigoconcli;
-        private System.Windows.Forms.Label lblnomconsu;
-        private System.Windows.Forms.Label lblapellconsu;
-        private System.Windows.Forms.Label lblestadoconsu;
-        private System.Windows.Forms.ComboBox cmbnombrecon;
-        private System.Windows.Forms.ComboBox cmbapellconsu;
-        private System.Windows.Forms.ComboBox cmbestadoconsu;
         private System.Windows.Forms.DataGridView dtvcliconsu;
-        private System.Windows.Forms.Button btncliconsu;
         private System.Windows.Forms.Label lbltituconsu;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
