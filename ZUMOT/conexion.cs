@@ -22,7 +22,7 @@ namespace administracion1
 
         public static SqlConnection enlace()
         {
-            SqlConnection conexiondata = new SqlConnection("Data Source=ACALLEJAS-PC\\SQLEXPRESS;Initial Catalog=Data_ZUMOT;Integrated Security=True");
+            SqlConnection conexiondata = new SqlConnection("Data Source=DESKTOP-S0OC9DG\\SQLEXPRESS;Initial Catalog=Data_ZUMOT;Integrated Security=True");
             
                 conexiondata.Open();
                 return conexiondata;
