@@ -53,6 +53,7 @@
             this.txtcodiconsucli.Size = new System.Drawing.Size(251, 26);
             this.txtcodiconsucli.TabIndex = 0;
             this.txtcodiconsucli.TextChanged += new System.EventHandler(this.txtcodiconsucli_TextChanged);
+            this.txtcodiconsucli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcodiconsucli_KeyPress);
             // 
             // lblcodigoconcli
             // 
@@ -68,6 +69,7 @@
             // 
             // dtvcliconsu
             // 
+            this.dtvcliconsu.AllowUserToAddRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,12 +87,12 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtvcliconsu.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtvcliconsu.Location = new System.Drawing.Point(32, 466);
+            this.dtvcliconsu.Location = new System.Drawing.Point(11, 430);
             this.dtvcliconsu.Margin = new System.Windows.Forms.Padding(2);
             this.dtvcliconsu.Name = "dtvcliconsu";
             this.dtvcliconsu.RowHeadersVisible = false;
             this.dtvcliconsu.RowTemplate.Height = 24;
-            this.dtvcliconsu.Size = new System.Drawing.Size(556, 78);
+            this.dtvcliconsu.Size = new System.Drawing.Size(588, 114);
             this.dtvcliconsu.TabIndex = 8;
             // 
             // lbltituconsu
@@ -98,7 +100,7 @@
             this.lbltituconsu.AutoSize = true;
             this.lbltituconsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltituconsu.ForeColor = System.Drawing.Color.Black;
-            this.lbltituconsu.Location = new System.Drawing.Point(134, 427);
+            this.lbltituconsu.Location = new System.Drawing.Point(134, 410);
             this.lbltituconsu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbltituconsu.Name = "lbltituconsu";
             this.lbltituconsu.Size = new System.Drawing.Size(361, 18);
