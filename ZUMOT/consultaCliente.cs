@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PANTALLASVENDEDORES
 {
-    public partial class consultadeinformacioncliente : Form
+    public partial class consultaCliente : Form
     {
-        public consultadeinformacioncliente()
+        public consultaCliente()
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace PANTALLASVENDEDORES
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcodiconsucli_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -11,11 +11,13 @@ using System.Windows.Forms;
 
 namespace administracion1
 {
-    
+
+
     public class conexion
     {
-         
-        SqlConnection conectar;
+        
+
+            SqlConnection conectar;
         SqlCommand comando;
         SqlDataReader dataleer;
         //---------------CONEXION A LA BASE DE DATOS---------------------------

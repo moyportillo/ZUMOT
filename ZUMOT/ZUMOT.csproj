@@ -59,11 +59,11 @@
       <DependentUpon>AgregarF.cs</DependentUpon>
     </Compile>
     <Compile Include="conexion.cs" />
-    <Compile Include="consultadeinformacioncliente.cs">
+    <Compile Include="consultaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="consultadeinformacioncliente.Designer.cs">
-      <DependentUpon>consultadeinformacioncliente.cs</DependentUpon>
+    <Compile Include="consultaCliente.Designer.cs">
+      <DependentUpon>consultaCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="estado_soli.cs">
       <SubType>Form</SubType>
@@ -193,8 +193,8 @@
     <EmbeddedResource Include="AgregarF.resx">
       <DependentUpon>AgregarF.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="consultadeinformacioncliente.resx">
-      <DependentUpon>consultadeinformacioncliente.cs</DependentUpon>
+    <EmbeddedResource Include="consultaCliente.resx">
+      <DependentUpon>consultaCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="estado_soli.resx">
       <DependentUpon>estado_soli.cs</DependentUpon>

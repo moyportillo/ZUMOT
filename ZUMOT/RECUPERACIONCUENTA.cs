@@ -126,6 +126,7 @@ namespace WindowsFormsApp1
                     {
                         lblerror.Visible = false;
                         MessageBox.Show("Contraseña Actualizada");
+                        //enviarCorreo(txtusuariorecu.Text, txtContrasenia.Text);
                         this.Hide();
                         INICIO_SESION regre = new INICIO_SESION();
                         regre.Show();
@@ -233,37 +234,65 @@ namespace WindowsFormsApp1
             recuperarContra();
         }
 
-        public void enviarCorreo(string correo, string contra)
+        public void enviarCorreo(string user, string contra)
         {
-            string contraseña = this.Contrasena;
-            string mensaje = string.Empty;
-            string destino = correo;
-            string origen = "moyporti15@gmail.com";
-            string asunto = "Cambio de Contraseña. Sistema ZUMOT";
-            string cuerpo = "ATENCION. Se ha hecho un cambio de contraseña en el Sitema ZUMOT. Su nueva contraseña: " + contra;
-            MailMessage ms = new MailMessage(origen, destino, asunto, cuerpo);
-
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 465);
-            smtp.EnableSsl = true;
-            smtp.Credentials = new NetworkCredential("moyporti15@gmail.com", contraseña);
-
             try
             {
-                Task.Run(() =>
+
+                conexion.enlace();
+                SqlCommand comando = new SqlCommand("select correo from empleados  where usuario_empleado = @user", conexion.enlace());
+                comando.Parameters.AddWithValue("@user", user);
+                SqlDataAdapter dtadapter = new SqlDataAdapter(comando);
+                DataTable datatabla = new DataTable();
+                dtadapter.Fill(datatabla);
+                if (datatabla.Rows.Count == 1)
                 {
 
-                    smtp.Send(ms);
-                    ms.Dispose();
-                    MessageBox.Show("Correo enviado, Verifique su bandeja de entrada");
-                }
-                );
+                    string contraseña = this.Contrasena;
+                    string mensaje = string.Empty;
+                    string destino = datatabla.Rows[0][0].ToString();
+                    string origen = "moises.portillo@unite.edu";
+                    string asunto = "Cambio de Contraseña. Sistema ZUMOT";
+                    string cuerpo = "ATENCION. Se ha hecho un cambio de contraseña en el Sitema ZUMOT. Su nueva contraseña: " + contra;
+                    MailMessage ms = new MailMessage(origen, destino, asunto, cuerpo);
 
-                MessageBox.Show("Esta tarea puede tardar unos segundos, por favor espere.");
+                    SmtpClient smtp = new SmtpClient("smtp.office365.com", 587);
+                    smtp.EnableSsl = true;
+                    smtp.Credentials = new NetworkCredential("moises.portillo@unitec.edu", contraseña);
+
+                    try
+                    {
+                        Task.Run(() =>
+                        {
+
+                            smtp.Send(ms);
+                            ms.Dispose();
+                            MessageBox.Show("Correo enviado, Verifique su bandeja de entrada");
+                        }
+                        );
+
+                        MessageBox.Show("Esta tarea puede tardar unos segundos, por favor espere.");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al enviar correo electronico: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("No se Encontro Correo.");
+                }
             }
-            catch (Exception ex)
+            catch(Exception e)
             {
-                MessageBox.Show("Error al enviar correo electronico: " + ex.Message);
+                MessageBox.Show("No se Pudo hacer la conexion para el correo. > " +e);
             }
+            finally
+            {
+                conexion.enlace().Close();
+            }
+            
+            
         }
 
         public string Contrasena

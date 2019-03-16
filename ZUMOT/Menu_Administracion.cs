@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using PANTALLASVENDEDORES;
 using pantallas;
+using WindowsFormsApp1;
 
 namespace administracion1
 {
@@ -121,6 +122,13 @@ namespace administracion1
         private void registroToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            INICIO_SESION login = new INICIO_SESION();
+            Close();
+            login.Show();
         }
     }
 }

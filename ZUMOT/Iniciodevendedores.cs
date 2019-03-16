@@ -30,7 +30,7 @@ namespace PANTALLASVENDEDORES
 
         private void modificarRegistroDeClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            consultadeinformacioncliente clienteinfo = new consultadeinformacioncliente();
+            consultaCliente clienteinfo = new consultaCliente();
             clienteinfo.Show();
         }
 

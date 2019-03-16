@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using administracion1;
 
 namespace PANTALLASVENDEDORES
 {
@@ -27,6 +29,31 @@ namespace PANTALLASVENDEDORES
         {
             this.Close();
 
+        }
+
+        private void Todoslosclientes_Load(object sender, EventArgs e)
+        {
+            clientesRegistrados(tablaClientes);
+        }
+
+        public void clientesRegistrados(DataGridView cliente)
+        {
+            conexion.enlace();
+            try
+            {
+                SqlDataAdapter dtadapter = new SqlDataAdapter("select identidad_cliente, nombre_cliente, apellido_cliente, celular, correo_electronico from proyecto", conexion.enlace());
+                DataTable datatabla = new DataTable();
+                dtadapter.Fill(datatabla);
+                cliente.DataSource = datatabla;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("No se Pudo mostrar la Lista de Clientes." +ex);
+            }
+            finally
+            {
+                conexion.enlace().Close();
+            }
         }
     }
 }
